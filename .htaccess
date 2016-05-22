@@ -1,4 +1,8 @@
 SetEnv TZ America/Los_Angeles
+<FilesMatch "^(GitHub-Mark-64px\.png)$">
+  ExpiresActive on 
+  ExpiresDefault "access plus 1 year"
+</FilesMatch>
 # 1 Month for most static assets
     <filesMatch "\.(html|htm)$">
         Header set Cache-Control "max-age=700, must-revalidate"
